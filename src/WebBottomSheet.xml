@@ -13,6 +13,14 @@
                     <attributeType name="Boolean"/>
                 </attributeTypes>
             </property>
+            <property key="blocking" type="boolean" defaultValue="true">
+                <caption>Blocking</caption>
+                <description>Enables focus trapping of keyboard navigation, so you can't accidentally tab out of the bottom sheet and into the background. Also sets aria-hidden on the rest of the page to prevent Screen Readers from escaping as well.</description>
+            </property>
+            <property key="scrollLocking" type="boolean" defaultValue="true">
+                <caption>Scroll Locking</caption>
+                <description>iOS Safari, and some other mobile culprits, can be tricky if you're on a page that has scrolling overflow on document.body thus enabled by default, disable this if you want full control for scrolling behaviour</description>
+            </property>
             <property key="content" type="widgets" required="false">
                 <caption>Content</caption>
                 <description>Content inside the bottom sheet</description>
