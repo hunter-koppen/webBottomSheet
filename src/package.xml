@@ -5,7 +5,7 @@
             <widgetFile path="WebBottomSheet.xml"/>
         </widgetFiles>
         <files>
-            <file path="clevr/webbottomsheet"/>
+            <file path="kobeon/webbottomsheet"/>
         </files>
     </clientModule>
 </package>

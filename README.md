@@ -17,4 +17,4 @@ Slide in content from below just like how many mobile apps often use nowadays. S
 https://webbottomsheet-sandbox.mxapps.io/
 
 ## Issues, suggestions and feature requests
-https://github.com/hunterkoppenclevr/webBottomSheet/issues
+https://github.com/hunter-koppen/webBottomSheet/issues
