@@ -27,7 +27,13 @@ export class ReactBottomSheet extends Component {
     render() {
         return (
             <div>
-                <BottomSheet open={this.state.open} onDismiss={this.onDismiss}>
+                <BottomSheet
+                    open={this.state.open}
+                    onDismiss={this.onDismiss}
+                    blocking={this.props.blocking}
+                    scrollLocking={this.props.scrollLocking}
+                    initialFocusRef={false}
+                >
                     {this.props.content}
                 </BottomSheet>
             </div>
