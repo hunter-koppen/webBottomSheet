@@ -2,6 +2,8 @@ import { Component, createElement } from "react";
 
 import { ReactBottomSheet } from "./components/ReactBottomSheet";
 
+import "./ui/WebBottomSheet.css";
+
 export class WebBottomSheet extends Component {
     render() {
         return (

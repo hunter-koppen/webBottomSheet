@@ -1,0 +1,11 @@
+.webbottomsheet .mx-layoutgrid .mx-layoutgrid,
+.webbottomsheet .mx-layoutgrid .mx-layoutgrid-fluid,
+.webbottomsheet .mx-layoutgrid-fluid .mx-layoutgrid,
+.webbottomsheet .mx-layoutgrid-fluid .mx-layoutgrid-fluid {
+    padding: 0;
+}
+
+.webbottomsheet .mx-layoutgrid,
+.webbottomsheet .mx-layoutgrid-fluid {
+    padding: 0 16px 16px 16px;
+}

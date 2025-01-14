@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "react-spring-bottom-sheet": "^3.4.1"
+    "react-spring-bottom-sheet-container-ref": "^1.0.0"
   }
 }

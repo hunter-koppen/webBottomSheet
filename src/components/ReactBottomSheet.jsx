@@ -1,13 +1,19 @@
-import { Component, createElement } from "react";
+import React, { Component, createElement } from "react";
 
-import { BottomSheet } from "react-spring-bottom-sheet";
-import "react-spring-bottom-sheet/dist/style.css";
+import { BottomSheet } from "react-spring-bottom-sheet-container-ref";
+import "react-spring-bottom-sheet-container-ref/dist/style.css";
 
 export class ReactBottomSheet extends Component {
+    containerRef = React.createRef();
     state = {
         open: false,
         editedvalue: null
     };
+
+    componentDidMount() {
+        const mxPageContainer = document.querySelector(".mx-page");
+        this.containerRef.current = mxPageContainer;
+    }
 
     componentDidUpdate(prevProps) {
         // Check if widget has loaded the url data
@@ -28,11 +34,13 @@ export class ReactBottomSheet extends Component {
         return (
             <div>
                 <BottomSheet
+                    className="webbottomsheet"
                     open={this.state.open}
                     onDismiss={this.onDismiss}
                     blocking={this.props.blocking}
                     scrollLocking={this.props.scrollLocking}
                     initialFocusRef={false}
+                    containerRef={this.containerRef}
                 >
                     {this.props.content}
                 </BottomSheet>
